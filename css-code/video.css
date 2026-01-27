@@ -37,21 +37,29 @@ margin-bottom: 8px;
 
 .video-grid{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-column-gap: 16px;
-row-gap: 40px;
+grid-template-columns: 1fr 1fr;
+column-gap: 8px;
+row-gap: 22px;
+padding: 20px;
 }
 
+@media(min-width: 901px) and (max-width: 1249px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width: 1250px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 .time{
-    font-family: Roboto,Arial;
     font-size: 12px;
     font-weight: 500;
 
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 4px;
-    padding-top: 4px;
-
+    padding: 4px;
+    
     position: absolute;
     right: 4px;
     bottom: 10px;
@@ -60,4 +68,11 @@ row-gap: 40px;
     color: white;
 
     border-radius: 2px;
+}
+
+.title,
+.profile-photo,
+.author,
+.thumbnail{
+    cursor: pointer;
 }
