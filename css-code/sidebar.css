@@ -2,10 +2,11 @@
     padding-top: 5px;
     background-color: white;
     position: fixed;
-    top: 50px;
+    top: 55px;
     bottom: 0px;
     left: 0px;
     width: 72px;
+    z-index: 2;
 }
 
 .sidebar-link{
@@ -14,14 +15,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    font-size: 10px;
     cursor: pointer;
 }
 
 .sidebar-link img{
     height: 24px;
     margin-bottom: 6.5px;
+}
+
+.sidebar-link div{
+    font-size: 10px;
+    font-family: Roboto, Arial;
 }
 
 .sidebar-link:hover{

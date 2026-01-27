@@ -1,13 +1,16 @@
 .header{
-    height: 50px;
+    height: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
     position: fixed;
+    z-index: 1;
     top: 0px;
     right: 0px;
     left: 0px;
+
     background-color: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -54,16 +57,46 @@
 }
 
 .search-inp::placeholder{
-    font-family: Arial;
+    font-family: Roboto,Arial;
     font-size: 16px;
 
 }
 
 .search-button,
-.voice-search-button{
+.voice-search-button,
+.right-section button{
+    position: relative;
     height: 40px;
     background-color: rgb(240, 240, 240);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.right-section button .tooltip{
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.right-section button:hover .tooltip{
+    opacity: 1;
 }
 
 .search-button{
@@ -86,20 +119,43 @@
     margin-left: 10px;
 }
 
+.voice-search-button img{
+    width: 25px;
+}
+
 .right-section{
     display: flex;
     width: 200px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-right: 8px;
     flex-shrink: 0;
+    padding-left: 10px;
 }
 
-.upload-button,
-.apps-button,
-.notif-button,
-.mychanel-button{
+.right-section button{
+    position: relative;
     border: none;
     background-color: white;
     cursor: pointer;
+}
+
+.right-section button img{
+    height: 25px;
+}
+
+.notification-score{
+    font-size: 10px;
+
+    padding-bottom: 2px;
+    padding-top: 2px;
+
+    position: absolute;
+    right: 3px;
+    top: 0px;
+    width: 14px;
+
+    background-color: rgb(186, 2, 2);
+    color: white;
+    border-radius: 100%;
 }

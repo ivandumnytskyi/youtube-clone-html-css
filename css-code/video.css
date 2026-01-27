@@ -1,9 +1,9 @@
 .title{
 font-size: 14px;
-font-weight: 700;
+font-weight: 600;
 margin-top: 0;
 line-height: 20px;
-margin-bottom: 12px;
+margin-bottom: 10px;
 }
 
 .author,
@@ -26,12 +26,13 @@ width: 100%;
 }
 
 .profile-photo{
-width: 80%;
+width: 36px;
 border-radius: 100%;
 }
 
 .thumbnail-row{
-margin-bottom: 12px;
+position: relative;
+margin-bottom: 8px;
 }
 
 .video-grid{
@@ -41,3 +42,22 @@ column-gap: 16px;
 row-gap: 40px;
 }
 
+.time{
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight: 500;
+
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+
+    position: absolute;
+    right: 4px;
+    bottom: 10px;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 2px;
+}
