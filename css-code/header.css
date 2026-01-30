@@ -100,6 +100,10 @@
     transition: background-color 0.25s;
 }
 
+.search-button img{
+    height: 25px;
+}
+
 .search-button:hover{
     background-color: rgb(223, 222, 222);
 }
