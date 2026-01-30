@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 
-.humburger{
+.hamburger{
     margin-left: 24px;
     margin-right: 24px;
     height: 24px;
@@ -154,4 +154,9 @@
     background-color: rgb(186, 2, 2);
     color: white;
     border-radius: 100%;
+}
+
+.your-profile{
+    height: 35px;
+    width: 35px;
 }
