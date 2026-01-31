@@ -17,6 +17,7 @@
 
 .left-section{
     display: flex;
+    align-items: center;
 }
 
 .logo{
@@ -54,7 +55,6 @@
 
 .search-inp::placeholder{
     font-size: 16px;
-
 }
 
 .search-button,
@@ -159,4 +159,53 @@
 .your-profile{
     height: 35px;
     width: 35px;
+}
+
+@media (max-width: 600px){ /* media for phones */
+    .header{
+        height: 45px;
+    }
+
+    .hamburger{
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 20px;
+    }
+
+    .logo{
+        height: 35px;
+    }
+
+    .search-button{
+        width: 30px;
+        height: 32px;
+    }
+
+    .search-inp{
+        height: 30px;
+    }
+
+    .voice-search-button{
+        height: 30px;
+        width: 30px;
+    }
+
+    .middle-section{
+        margin-left: 20px;
+    }
+
+    .right-section{
+        width: 50px;
+    }
+
+    .right-section button{
+        display: none;
+    }
+
+    .your-profile{
+        width: 25px;
+        height: 25px;
+    }
+
+    
 }

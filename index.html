@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>YouTube clone</title>
-    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,11 @@
     <header class="header">
       <div class="left-section">
         <img class="hamburger" src="icons/hamburger-menu.svg" alt="hamburger-icon">
-        <img class="logo" src="icons/youtube-logo.svg" alt="youtube-logo">
+        <picture>
+          <source srcset="icons/YouTube_social_white_square_(2024).svg" media="(max-width: 600px)">
+          <img class="logo" src="icons/youtube-logo.svg" alt="youtube-logo">  
+        </picture>
+        
       </div>
       <div class="middle-section">
         <input class="search-inp" 
@@ -52,9 +56,7 @@
           <div class="tooltip">Notification</div>
         </button>
         
-        <button>
-          <img class = "your-profile" src="channel-pics/my-channel.jpeg" alt="Your-profile">
-        </button>
+        <img class = "your-profile" src="channel-pics/my-channel.jpeg" alt="Your-profile">
       </div>
       
     </header>
