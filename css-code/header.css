@@ -177,8 +177,7 @@
     }
 
     .search-button{
-        width: 30px;
-        height: 32px;
+        display: none;
     }
 
     .search-inp{
