@@ -1,24 +1,24 @@
 .title{
-font-size: 14px;
+font-size: var(--normal-font);
 font-weight: 600;
-margin-top: 0;
-line-height: 20px;
-margin-bottom: 10px;
+line-height: 2rem;
+margin-bottom: 1rem;
 }
 
 .author,
 .stats{
-font-size: 14px;
+font-size: var(--normal-font);
 color: rgb(96,96,96);
 }
 
 .author{
-margin-bottom: 4px;
+margin-bottom: 0.4rem;
 }
 
 .video-info-grid{
 display: grid;
-grid-template-columns: 50px 1fr;
+grid-template-columns: 5rem 1fr;
+/* width: 90%; */
 }
 
 .thumbnail{
@@ -26,60 +26,29 @@ width: 100%;
 }
 
 .profile-photo{
-width: 36px;
-border-radius: 100%;
+width: 3.6rem;
+border-radius: 50%;
 }
 
 .thumbnail-row{
 position: relative;
-margin-bottom: 8px;
+margin-bottom: 0.8rem;
 }
 
 .video-grid{
 display: grid;
-grid-template-columns: 1fr 1fr;
-column-gap: 8px;
-row-gap: 22px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+column-gap: 0.8rem;
+row-gap: 2.2rem;
 padding: 20px;
 }
 
-/* media for phones */
-@media (max-width: 601px){
-    .video-grid{
-        grid-template-columns: 1fr;
-    }
-}
-
-@media(min-width: 901px) and (max-width: 1249px){
-    .video-grid{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media(min-width: 1250px) {
-    .video-grid{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
 .time{
-    font-size: 12px;
-    font-weight: 500;
-
-    padding: 4px;
-    
-    position: absolute;
-    right: 4px;
-    bottom: 10px;
-
     background-color: black;
+    width:4rem;
     color: white;
-
-    border-radius: 2px;
-}
-
-.title,
-.profile-photo,
-.author,
-.thumbnail{
-    cursor: pointer;
+    font-size: var(--normal-font);
+    position: absolute;
+    right: 2%;
+    bottom: 4%;
 }

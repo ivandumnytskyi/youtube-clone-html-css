@@ -1,5 +1,5 @@
 .header{
-    height: 55px;
+    height: 5.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,61 +7,69 @@
     
     position: fixed;
     z-index: 1;
-    top: 0px;
-    right: 0px;
-    left: 0px;
+    top: 0;
+    right: 0;
+    left: 0;
 
-    background-color: white;
+    background-color: var(--bg-color-bars);
     border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.header img{
+    height: 2.5rem;
 }
 
 .left-section{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 15.5rem;
 }
 
 .logo{
-    height: 20px;
+    width: 9rem;
     cursor: pointer;
 }
 
 .hamburger{
-    margin-left: 24px;
-    margin-right: 24px;
-    height: 24px;
-    cursor: pointer;
+    height: 24px; 
+}
+
+.hamburger-button{
+    padding-top: 0.3rem;
+    width: 6rem;
+    border: none;
+    background-color:var(--bg-color-bars);
+    cursor: pointer
 }
 
 .middle-section{
     flex: 1;
     display: flex;
     align-items: center;
-    margin-left: 60px;
-    max-width: 470px;
-    height: 40px;
+    margin-left: 6rem;
+    max-width: 60rem;
 }
 
 .search-inp{
-    width: 0;
     flex:1;
-    height: 36.08px;
-    padding-left: 12px;
-    padding-right: 2px;
-    font-size: 16px;
+    height: 3.6rem;
+    padding-left: 1.2rem;
+    padding-right: 0.2rem;
+    font-size: var(--normal-font);
     border: 1px, solid lightgray;
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 .search-inp::placeholder{
-    font-size: 16px;
+    font-size: var(--normal-font);
 }
 
 .search-button,
-.voice-search-button,
-.right-section button{
+.voice-search-button{
     position: relative;
-    height: 40px;
+    height: 3.8rem;
     background-color: rgb(240, 240, 240);
     cursor: pointer;
     display: flex;
@@ -75,10 +83,10 @@
     position: absolute;
     background-color: rgb(102, 102, 102);
     color: white;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     border-radius: 2px;
-    font-size: 12px;
-    bottom: -30px;
+    font-size: 1.2rem;
+    bottom: -3rem;
     opacity: 0;
     transition: opacity 0.15s;
     pointer-events: none;
@@ -92,119 +100,62 @@
 }
 
 .search-button{
-    width: 66px;
+    height: auto;
+    width: 6.6rem;
     border-width: 1px;
     border-style: solid;
     border-color: lightgray;
     margin-left: -1px;
     transition: background-color 0.25s;
-}
-
-.search-button img{
-    height: 25px;
+    align-self: stretch;
 }
 
 .search-button:hover{
-    background-color: rgb(223, 222, 222);
+    background-color: var(--hover-button-color);
 }
 
 .voice-search-button{
-    width: 40px;
+    width: 4rem;
     border-radius: 100%;
     border: none;
-    margin-left: 10px;
-}
-
-.voice-search-button img{
-    width: 25px;
+    margin-left: 1rem;
 }
 
 .right-section{
     display: flex;
-    width: 200px;
+    width: 20rem;
     align-items: center;
     justify-content: space-around;
-    padding-right: 8px;
+    padding-right: 0.8rem;
     flex-shrink: 0;
-    padding-left: 10px;
+    padding-left: 1rem;
 }
 
-.right-section button{
+.mobile-search-button{
+    display: none;
+}
+
+.mobile-search-button,
+.apps-button,
+.upload-button,
+.notification-button{ 
     position: relative;
     border: none;
-    background-color: white;
+    background-color: inherit;
     cursor: pointer;
 }
 
-.right-section button img{
-    height: 25px;
-}
-
 .notification-score{
-    font-size: 10px;
+    font-size: 1rem;
 
-    padding-bottom: 2px;
-    padding-top: 2px;
+    padding: 0.2rem 0.1rem;
 
     position: absolute;
-    right: 3px;
-    top: 0px;
-    width: 14px;
+    right: 0.3rem;
+    top: 0;
+    width: 1.4rem;
 
-    background-color: rgb(186, 2, 2);
+    background-color: var(--score-bg);
     color: white;
     border-radius: 100%;
-}
-
-.your-profile{
-    height: 35px;
-    width: 35px;
-}
-
-@media (max-width: 600px){ /* media for phones */
-    .header{
-        height: 45px;
-    }
-
-    .hamburger{
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 20px;
-    }
-
-    .logo{
-        height: 35px;
-    }
-
-    .search-button{
-        display: none;
-    }
-
-    .search-inp{
-        height: 30px;
-    }
-
-    .voice-search-button{
-        height: 30px;
-        width: 30px;
-    }
-
-    .middle-section{
-        margin-left: 20px;
-    }
-
-    .right-section{
-        width: 50px;
-    }
-
-    .right-section button{
-        display: none;
-    }
-
-    .your-profile{
-        width: 25px;
-        height: 25px;
-    }
-
-    
 }

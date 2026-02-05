@@ -13,15 +13,19 @@
     <link rel="stylesheet" href="css-code/general.css">
     <link rel="stylesheet" href="css-code/header.css">
     <link rel="stylesheet" href="css-code/sidebar.css">
+    <link rel="stylesheet" href="css-code/media.css">
   </head> 
   <body>
     <header class="header">
       <div class="left-section">
-        <img class="hamburger" src="icons/hamburger-menu.svg" alt="hamburger-icon">
-        <picture>
-          <source srcset="icons/YouTube_social_white_square_(2024).svg" media="(max-width: 600px)">
+        <button class="hamburger-button">
+          <img class="hamburger" src="icons/hamburger-menu.svg" alt="hamburger-icon">
+        </button>
+        <!-- comented section is a structure is an example how to change img depending on max-width -->
+        <!-- <picture>
+          <source srcset="icons/YouTube_social_white_square_(2024).svg" media="(max-width: 600px)"> -->
           <img class="logo" src="icons/youtube-logo.svg" alt="youtube-logo">  
-        </picture>
+         <!-- </picture> -->
         
       </div>
       <div class="middle-section">
@@ -40,17 +44,22 @@
         </button>
       </div>
       <div class = "right-section">
-        <button>
+        <button class="upload-button">
           <img src="icons/upload.svg" alt="Upload">
           <div class="tooltip">Upload</div>
         </button>
 
-        <button>
+        <button class="apps-button">
           <img src="icons/youtube-apps.svg" alt="YouTube-apps">
           <div class="tooltip">Apps</div>
         </button>
+
+        <button class="mobile-search-button">
+          <img src="icons/search.svg" alt="Search-icon">
+          <div class="tooltip">Search</div>
+        </button>
         
-        <button>
+        <button class="notification-button">
           <img src="icons/notifications.svg" alt="Norification">
           <div class="notification-score">3</div>
           <div class="tooltip">Notification</div>

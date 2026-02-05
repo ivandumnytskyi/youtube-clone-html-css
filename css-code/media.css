@@ -1,0 +1,73 @@
+@media (max-width:64rem){
+/* 1024/16=64 */
+.video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media (max-width: 47rem){  
+    /* 745/15=~47 */
+
+    html{
+      font-size: 58%;
+    } 
+
+    .video-grid{
+    grid-template-columns: 1fr 1fr ;
+    }
+
+    .side-bar{
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 92%;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: row;
+        position: fixed;
+    }
+
+    .sidebar-link{
+        height: 100%;
+        width: 7rem;
+    }
+
+    .sidebar-link img{
+        height: 2.2rem;
+    }
+
+    /* header medias for phone */
+
+    .mobile-search-button{
+        display: block;
+    }
+    .logo,
+    .your-profile{
+        padding: 1rem;
+    }
+    .right-section,
+    .left-section{
+        width: auto;
+    }
+
+    .header{
+        justify-content: space-between;
+    }
+    .apps-button,
+    .upload-button,
+    .hamburger-button,
+    .middle-section{
+        display: none;
+    }
+}
+
+@media (max-width:32rem){
+/* 1024/16=64 */
+.video-grid{
+    grid-template-columns: 1fr;
+}
+}
+
+
+
