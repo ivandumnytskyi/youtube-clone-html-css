@@ -44,6 +44,7 @@ padding: 20px;
 }
 
 .time{
+    text-align: center;
     background-color: black;
     width:4rem;
     color: white;

@@ -16,15 +16,16 @@
     <link rel="stylesheet" href="css-code/media.css">
   </head> 
   <body>
+    <div class="try"></div>
     <header class="header">
       <div class="left-section">
-        <button class="hamburger-button">
+        <button class="hamburger-button" onclick="activateSidebar()">
           <img class="hamburger" src="icons/hamburger-menu.svg" alt="hamburger-icon">
         </button>
         <!-- comented section is a structure is an example how to change img depending on max-width -->
         <!-- <picture>
           <source srcset="icons/YouTube_social_white_square_(2024).svg" media="(max-width: 600px)"> -->
-          <img class="logo" src="icons/youtube-logo.svg" alt="youtube-logo">  
+          <a href="https://www.youtube.com/"><img class="logo" src="icons/youtube-logo.svg" alt="youtube-logo"></a>  
          <!-- </picture> -->
         
       </div>
@@ -508,6 +509,17 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const activateSidebar = () =>{
+        document.querySelector('.side-bar')
+        .classList
+        .toggle('active-sidebar')
+        document.querySelector('.try')
+        .classList
+        .toggle('active-sidebartry')
+      }
+    </script>
   </main>
   </body>
 </html>
